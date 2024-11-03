@@ -300,9 +300,9 @@ BuildSplashScreen() {
     sed -e s/REPLACE--MANTLE/"$MANTLECOLOR"/g ./Resources/splash-screen/contents/splash/Splash.qml > ./dist/"$SPLASHSCREENNAME"/contents/splash/Splash.qml
     # Add CTP Logo
     if [ "$FLAVOUR" -ne 4 ]; then
-        cp ./Resources/splash-screen/contents/splash/images/Logo.png ./dist/"$SPLASHSCREENNAME"/contents/splash/images/Logo.png
+        cp ./Resources/splash-screen/contents/splash/images/Logo.svg ./dist/"$SPLASHSCREENNAME"/contents/splash/images/Logo.svg
     else
-        cp ./Resources/splash-screen/contents/splash/images/Latte_Logo.png ./dist/"$SPLASHSCREENNAME"/contents/splash/images/Logo.png
+        cp ./Resources/splash-screen/contents/splash/images/Latte_Logo.svg ./dist/"$SPLASHSCREENNAME"/contents/splash/images/Logo.svg
     fi
     #sed "s/--accentName/$ACCENTNAME/g; s/--flavour/$FLAVOURNAME/g" ./Resources/splash-screen/metadata.desktop > ./dist/"$SPLASHSCREENNAME"/metadata.desktop
 	#sed "s/--accentName/$ACCENTNAME/g; s/--flavour/$FLAVOURNAME/g" ./Resources/splash-screen/metadata.json > ./dist/"$SPLASHSCREENNAME"/metadata.json

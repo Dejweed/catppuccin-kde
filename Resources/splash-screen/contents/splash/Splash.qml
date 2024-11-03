@@ -50,7 +50,7 @@ Rectangle {
             readonly property real size: Kirigami.Units.gridUnit * 8
 
             anchors.centerIn: parent
-            source: "images/Logo.png"
+            source: "images/Logo.svg"
 
             sourceSize.width: size
             sourceSize.height: sizes
